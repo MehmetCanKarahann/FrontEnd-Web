@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    
+    > bir bileşenin alt kırılımlarına bileşen eklemek için kullanılır.
+    ^ bileşenin bir üst bileşenine ulaşmak için kullanırız.
+    + aynı düzeyde bileşenleri eklemek için kullanırız.
+    {} bileşenin içerisinde yer alacak metinleri eklemek için kullanılır.
+    * bir bileşenden birden fazla eklemek için kullanılır.
+    $ çoklu bileşen eklerken sıralamanın metin içerisine eklenmesini sağlar.
+    . bir bileşene class eklemek için kullanılır.
+    # bir bileşene id eklemek için kullanılır.
+    () bir bileşen ile diğer bileşenin grup şeklinde kullanımının sırasında
+     karışmaması için kullanılır.
+
+    -->
+
+    <!--
+
+    Kullanım: div>div>label^div>input:text
+
+    Sonuç: 
+    <div>
+        <div>
+            <label for=""></label>
+        </div>
+        <div>
+            <input type="text" name="" id="">
+        </div>
+    </div>
+
+    -->
+
+    <!--
+    
+    Kullanım: div>label+input:text+button:button
+
+    Sonuç:
+    <div>
+        <label for=""></label>
+        <input type="text" name="" id="">
+        <button></button>
+    </div>
+    
+    -->
+    
+    <!--
+    
+    Kullanım: div>label{Adınızı Giriniz:}^br+div>input:text+button:button{Tıkla}
+
+    Sonuç: 
+    <div>
+        <label for="">Adınızı Giriniz:</label>
+    </div>
+    <br>
+    <div>
+        <input type="text" name="" id="">
+        <button type="button">Tıkla</button>
+    </div>
+    
+    -->
+    
+    <!--
+    
+    Kullanım: ul>li{sıra$}*5
+
+    Sonuç:
+    <ul>
+        <li>sıra1</li>
+        <li>sıra2</li>
+        <li>sıra3</li>
+        <li>sıra4</li>
+        <li>sıra5</li>
+    </ul>
+    
+    -->
+    
+    <!--
+    
+    Kullanım: table>thead>tr>th{baslik$}*2^^tbody>(tr>td{data$}*2)*10
+
+    Sonuç:
+    <table>
+        <thead>
+            <tr>
+                <th>baslik1</th>
+                <th>baslik2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>baslik1</th>
+                <th>baslik2</th>
+                <th>baslik3</th>
+                <th>baslik4</th>
+                <th>baslik5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+    
+</body>
+</html>

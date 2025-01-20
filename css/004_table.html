@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            /**
+            tablonun satırlarının bir birlerine bitiştirmek
+            ya da ayırmak için kullanırız.
+            separate: ayırmak için
+            collapse: birleştirmek için
+            */
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid brown;
+        }
+        td{
+            padding: 3px;
+        }
+        th{
+            padding: 5px;
+            background-color: coral;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tr:hover{
+            background-color: rgb(65, 106, 229);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>ad</th>
+                <th>telefon</th>
+                <th>email</th>
+                <th>yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Mehmet Can</td>
+                <td>0 555 333 77 88</td>
+                <td>mehmet@gmail.com</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Hüsnü</td>
+                <td>0 662 001 78 89</td>
+                <td>hüsnü@gmail.com</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Mesut</td>
+                <td>0 567 345 79 90</td>
+                <td>mesut@gmail.com</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Rıza</td>
+                <td>0 765 543 80 91</td>
+                <td>rıza@gmail.com</td>
+                <td>61</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Aylin</td>
+                <td>0 321 458 58 40</td>
+                <td>aylin@gmail.com</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Ali</td>
+                <td>0 856 961 25 67</td>
+                <td>ali@gmail.com</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>Nazike</td>
+                <td>0 945 185 71 86</td>
+                <td>nazike@gmail.com</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>Tekin</td>
+                <td>0 652 785 93 48</td>
+                <td>tekin@gmail.com</td>
+                <td>17</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

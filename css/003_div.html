@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**
+        margin: bir elementin dış çeperlerinden olan uzaklıklarına
+        verilen addır.[left,right,top,bottom]
+
+        border: bir bileşenin dört çevresinde bulunan
+        kenarları birleştiren kenarlığı ifade eder, ayrı ayrı
+        manipüle edilebilir.
+
+        padding: bir bileşenin kendi içerisindeki bileşenlerine 
+        olan iç uzaklığını ifade eder
+
+        ÖNEMLİ!!! padding ilgili bileşenin hacminin artmasına 
+        neden olur. Bu nedenle sayfa yapısının oranını bozabilir.
+        Kullanırken hesaba katılması gereklidir.
+        */
+        div{
+            border: 1px solid red ;
+            padding: 5px;
+            margin: 5px;
+        }
+        button{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .kutu{
+            width: 100px;
+            height: 200px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .bilgi-formu{
+            padding: 5px;
+            width: 65%;
+        }
+        .makale-box{
+            border: 2px dotted green;
+            width: 50%;
+            height: 300px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <input class="bilgi-formu" type="text" name="ad" id="ad">
+    </div>
+    <div class="div2">
+        <label>ReactJS</label>
+    </div>
+    <div class="div3">
+        <label>Konu ile İçeriklerin Tam Listesi</label>
+    </div>
+    <div class="makale-box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere nesciunt aliquam mollitia, laboriosam vitae quia reprehenderit fuga suscipit odio nobis dignissimos quidem consequuntur rem deleniti iste ad et atque!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aperiam blanditiis nam assumenda pariatur, dolorem maxime molestiae fugit culpa totam tempore itaque delectus quaerat eaque ratione expedita fugiat fuga! Perferendis!
+            Sed ab impedit quo. Accusamus cupiditate, quasi, laborum eum asperiores eveniet nisi repellat magni aliquam, dolore aliquid rem omnis quibusdam expedita quidem tenetur dolores. Adipisci dolor quaerat doloremque unde eaque!
+            Impedit cum debitis iure eligendi sequi saepe? In nobis dicta quos dolor at deserunt fuga. Iste nesciunt explicabo sint provident hic at sapiente. Id velit ipsum quia adipisci provident dolorem!
+            Maxime vero sit vitae ducimus quis, aliquam a pariatur, molestias facilis voluptatibus architecto? Sapiente at neque illo a blanditiis deserunt, odit, dolor natus molestias nisi quisquam architecto vitae! Dicta, sint!
+            Expedita possimus aliquid ad, temporibus odio rerum dignissimos culpa consequatur modi non in eveniet, sapiente adipisci quas soluta ab debitis reprehenderit repudiandae aspernatur impedit ullam. Dolor necessitatibus illo explicabo incidunt.
+        </p>
+    </div>
+    <div>
+        <button type="button">Buradan Çık</button>
+    </div>
+    <br><br>
+    <div class="kutu">
+
+    </div>
+</body>
+</html>
